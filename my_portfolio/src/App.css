@@ -1,0 +1,216 @@
+#auto-type::after {
+  content: "|";
+  font-size: 60px;
+  color: #ffc107;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+#logo {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 20px;
+  font-style: normal;
+}
+
+:root {
+  --first-color: #000;
+  --second-color: #dc3545;
+  --third-color: #ffffff;
+  --fourth-color: #fdfd14;
+}
+
+body {
+  overflow-x: hidden;
+}
+/* #navigationBar {
+  box-shadow: var(--second-color);
+} */
+#menu ul li a {
+  color: var(--third-color);
+}
+#menu ul li a:hover {
+  color: rgba(255, 255, 255, 0.3);
+  transform: 0.5s;
+}
+
+#intro {
+  height: 120% !important;
+}
+
+.header-font {
+  font-size: 40px;
+}
+
+/* #auto-type {
+  font-size: 60px;
+  font-weight: bolder;
+} */
+
+#mainImg {
+  width: 75%;
+  object-fit: cover;
+  object-position: 90% 0%;
+  height: 90%;
+}
+
+.line {
+  width: 100px;
+  height: 2px;
+  background-color: var(--fourth-color);
+  margin: 30px auto;
+}
+
+.bottomLine {
+  width: 36vw;
+  height: 1px;
+  background-color: var(--third-color);
+  margin: 5% 1%;
+}
+.CanImg {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+#experience {
+  font-size: 9rem;
+  font-weight: bolder;
+  top: -58%;
+  color: var(--third-color);
+}
+
+#yoe {
+  top: 50%;
+  right: 20%;
+  font-weight: bolder;
+}
+
+#circle {
+  height: 20vh;
+}
+
+#bYoe {
+  display: none;
+}
+
+#dYoe {
+  display: block;
+}
+@media screen and (min-width: 380px) and (max-width: 1200px) {
+  #bYoe {
+    display: block;
+  }
+
+  #dYoe {
+    display: none;
+  }
+}
+
+#edu-bg {
+  background: linear-gradient(
+    to bottom,
+    var(--first-color),
+    rgba(255, 224, 70, 0.251)
+  );
+  /* opacity: 0.4; */
+}
+#pl-bg {
+  background: linear-gradient(
+    to top,
+    var(--first-color),
+    rgba(255, 224, 70, 0.502)
+  );
+
+  height: 70vh;
+}
+
+/* This is projects section */
+.carousel-control-prev-icon {
+  background-color: var(--fourth-colorfourth-color);
+}
+
+.carousel-control-next {
+  background-color: var(--fourth-colorfourth-color);
+}
+
+#faq {
+  background: linear-gradient(
+    to top,
+    rgba(255, 255, 255, 0.733),
+    var(--first-color)
+  );
+}
+
+.custom-label {
+  background-color: rgb(
+    0,
+    0,
+    0
+  ); /* Change this to your desired background color */
+  color: black; /* Adjust text color for contrast */
+  padding: 0 0.25rem; /* Add some padding to improve appearance */
+  border-radius: 0.25rem; /* Optional: round the corners */
+}
+
+#contact {
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.733),
+    var(--first-color)
+  );
+}
+
+#CV {
+  height: 60vh;
+  /* position: relative; */
+  z-index: -1;
+  object-fit: cover;
+}
+
+#click-cv {
+  position: relative;
+  top: -40%;
+  z-index: 11;
+}
+
+/* This is for footer */
+#footer {
+  overflow: hidden;
+  box-shadow: 0 -4px 15px -1px rgba(255, 255, 255, 0.4);
+}
+
+#footer ul {
+  list-style-type: none;
+}
+
+#footer ul li {
+  padding: 10px 0;
+}
+
+/* This is for login page */
+.login-container {
+  background: url("https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/bg.webp")
+    no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-col {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
